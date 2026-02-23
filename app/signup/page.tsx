@@ -33,6 +33,25 @@ export default function SignupPage() {
                 onChange={(e) => setuser({...user,username:e.target.value})}
                 placeholder="username"
                 />
+        
+         <label htmlFor = "email">email</label>
+         <input 
+                type="text" 
+                id="email"
+                value={user.email}
+                onChange={(e) => setuser({...user,email:e.target.value})}
+                placeholder="email"
+                />
+        
+        <label htmlFor = "password">password</label>
+         <input 
+                type="password" 
+                id="password"
+                value={user.password}
+                onChange={(e) => setuser({...user,password:e.target.value})}
+                placeholder="password"
+                />
+
 
       </div>
       )
