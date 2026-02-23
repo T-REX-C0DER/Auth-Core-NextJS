@@ -45,7 +45,7 @@ export default function LoginPage() {
        <button onClick={onSignup}> 
         Signup Here
        </button>
-       <Link href="/login"> Visit Sign Page</Link>
+       <Link href="/signup"> Visit Sign Page</Link>
        
       </div>
       )
