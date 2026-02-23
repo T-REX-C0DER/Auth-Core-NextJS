@@ -23,7 +23,7 @@ export default function SignupPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen py-2">  
 
-         <h1 className="text-5xl font-bold text-white "> SIGNUP PAGE</h1>
+         <h1 className="text-5xl font-bold text-white "> SIGNUP PAGE</h1> <br />
          <hr />
          <label htmlFor = "username">username</label>
          <input 
@@ -33,6 +33,7 @@ export default function SignupPage() {
                 onChange={(e) => setuser({...user,username:e.target.value})}
                 placeholder="username"
                 />
+            <br />
         
          <label htmlFor = "email">email</label>
          <input 
@@ -43,6 +44,7 @@ export default function SignupPage() {
                 placeholder="email"
                 />
         
+        <br /> 
         <label htmlFor = "password">password</label>
          <input 
                 type="password" 
@@ -52,7 +54,11 @@ export default function SignupPage() {
                 placeholder="password"
                 />
 
-
+       <button onClick={onSignup}> 
+        Signup Here
+       </button>
+       <Link href="/login"> Visit Login Page</Link>
+       
       </div>
       )
 }
